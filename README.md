@@ -1,8 +1,8 @@
-# Mycelium Matchmaker DIU Setup
+# 🌟 Mycelium Matchmaker DIU Setup 🚀
 
 This project is a multi-step Digital Identity Unit (DIU) setup wizard built using HTML, Alpine.js, and Tailwind CSS. The interface guides users through setting up their digital profile, including selecting interests, content preferences, and privacy settings with AI personalization options.
 
-## Overview
+## 🔍 Overview
 
 The setup wizard is divided into 5 steps:
 
@@ -21,7 +21,7 @@ The setup wizard is divided into 5 steps:
 5. **Complete:**  
    Displays the DIU profile summary and invites users to explore their personalized AI-powered feed.
 
-## Features
+## ✨ Features
 
 - **Responsive Design:**  
   The layout adjusts for mobile screens (using Tailwind CSS and custom media queries).
@@ -32,7 +32,7 @@ The setup wizard is divided into 5 steps:
 - **Step-by-Step Navigation:**  
   Users can navigate forward and backward between steps in the wizard.
 
-## Getting Started
+## 🚀 Getting Started
 
 To test the wizard locally:
 
@@ -41,12 +41,12 @@ To test the wizard locally:
 
 The project leverages CDN links for Tailwind CSS and Alpine.js, so no local installation is required.
 
-## File Structure
+## 📁 File Structure
 
 - **matchmaker2.html:**  
   The main file containing all the HTML markup and inline scripts for initializing Alpine.js.
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **HTML5:**  
   Structure and layout of the wizard.
@@ -57,7 +57,7 @@ The project leverages CDN links for Tailwind CSS and Alpine.js, so no local inst
 - **Alpine.js:**  
   Lightweight JavaScript framework providing reactivity and interactivity.
 
-## Usage Instructions
+## 📝 Usage Instructions
 
 1. **Start the Wizard:**  
    Open the `matchmaker2.html` in your preferred browser to load the wizard.
