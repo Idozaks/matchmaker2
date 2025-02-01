@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mycelium Matchmaker Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Simple fade-in animation */
+    .fade-in {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div class="p-6 max-w-5xl mx-auto">
+    <h1 class="text-3xl font-bold text-purple-600 mb-6">Mycelium Matchmaker Dashboard</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- DIU Insights Card -->
+      <div class="bg-white p-4 rounded-lg shadow-lg fade-in" id="diuCard">
+        <h2 class="text-xl font-semibold mb-4">Your DIU Profile</h2>
+        <div>
+          <h3 class="font-bold">Top Interests:</h3>
+          <ul class="list-disc ml-6" id="interestsList">
+            <!-- Interests will be injected here -->
+          </ul>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-bold">AI Insights:</h3>
+          <p id="aiInsights">
+            <!-- AI insights text will be updated here -->
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Actions Panel -->
+      <div class="bg-white p-4 rounded-lg shadow-lg fade-in" id="actionsPanel">
+        <h2 class="text-xl font-semibold mb-4">Quick Actions</h2>
+        <div class="flex flex-col space-y-3">
+          <button class="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">
+            Edit DIU
+          </button>
+          <button class="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">
+            Manage Privacy Settings
+          </button>
+          <button class="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">
+            View Recommended Content
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Activity Logs -->
+    <div class="mt-6 bg-white p-4 rounded-lg shadow-lg fade-in" id="aiLogsCard">
+      <h2 class="text-xl font-semibold mb-4">AI Activity Logs</h2>
+      <ul class="list-disc ml-6 space-y-1" id="logsList">
+         <!-- Logs will be injected here -->
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Initial Data
+    const diuData = {
+      interests: ["Technology", "Music", "Travel"],
+      aiInsights: "Your AI has detected interesting patterns in your activity."
+    };
+
+    const aiLogs = [
+      "Initializing AI learning...",
+      "Analyzing user engagement...",
+      "Updated preferences based on recent interactions."
+    ];
+
+    // Update the list of interests
+    function updateInterests() {
+      const interestsList = document.getElementById("interestsList");
+      interestsList.innerHTML = "";
+      diuData.interests.forEach(interest => {
+        const li = document.createElement("li");
+        li.textContent = interest;
+        interestsList.appendChild(li);
+      });
+    }
+
+    // Update AI insights text
+    function updateAiInsights() {
+      const insightsEl = document.getElementById("aiInsights");
+      insightsEl.textContent = diuData.aiInsights;
+    }
+
+    // Update AI logs list with the latest 5 entries (in reverse order)
+    function updateAiLogs() {
+      const logsList = document.getElementById("logsList");
+      logsList.innerHTML = "";
+      aiLogs.slice(-5).reverse().forEach(log => {
+        const li = document.createElement("li");
+        li.textContent = log;
+        logsList.appendChild(li);
+      });
+    }
+
+    // Set up dynamic updates once the DOM is loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      updateInterests();
+      updateAiInsights();
+      updateAiLogs();
+
+      // Simulate dynamic updates every 10 seconds
+      setInterval(() => {
+        const now = new Date().toLocaleTimeString();
+        diuData.aiInsights = "Updated insights at " + now;
+        updateAiInsights();
+
+        aiLogs.push("AI update at " + now);
+        updateAiLogs();
+      }, 10000);
+    });
+  </script>
+</body>
+</html> 
