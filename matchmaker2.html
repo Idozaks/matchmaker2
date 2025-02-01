@@ -130,11 +130,10 @@
                     <p x-text="`Content: ${formData.contentPreferences.join(', ')}`"></p>
                     <p x-text="`Privacy: ${formData.privacyMode}`"></p>
                 </div>
-                <button
-                    class="w-full bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700"
-                    @click="alert('Exploring your personalized feed!')">
+                <a href="explore.html"
+                    class="block w-full bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700 text-center">
                     Explore Your AI-Powered Feed
-                </button>
+                </a>
             </div>
 
             <!-- Navigation -->

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Your AI-Powered Feed</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-6">
+        <div class="flex-shrink-0">
+          <h1 class="text-xl font-bold text-purple-600">Mycelium Feed</h1>
+        </div>
+        <nav class="hidden md:block">
+          <ul class="flex space-x-6">
+            <li><a href="#" class="text-gray-600 hover:text-purple-600">Home</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-purple-600">Discover</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-purple-600">Profile</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-purple-600">Settings</a></li>
+          </ul>
+        </nav>
+        <div class="md:hidden">
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="text-gray-600 hover:text-purple-600 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <ul class="space-y-3">
+        <li><a href="#" class="block text-gray-600 hover:text-purple-600">Home</a></li>
+        <li><a href="#" class="block text-gray-600 hover:text-purple-600">Discover</a></li>
+        <li><a href="#" class="block text-gray-600 hover:text-purple-600">Profile</a></li>
+        <li><a href="#" class="block text-gray-600 hover:text-purple-600">Settings</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-purple-600 text-white py-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-extrabold mb-4">Explore Your AI-Powered Feed</h2>
+      <p class="text-lg">Discover content tailored just for you. Enjoy personalized articles, videos, podcasts, and more.</p>
+      <a href="matchmaker2.html" class="mt-6 inline-block bg-white text-purple-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
+        Back to Setup
+      </a>
+    </div>
+  </section>
+
+  <!-- Content Feed -->
+  <main class="max-w-7xl mx-auto px-4 py-10">
+    <h3 class="text-2xl font-bold mb-6">Recommended for You</h3>
+    <!-- Grid of Feed Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Feed Card 1 -->
+      <div class="bg-white shadow rounded-lg overflow-hidden">
+        <figure>
+          <img src="./images/technology.png" alt="Technology Image" class="w-full h-40 object-cover">
+          <figcaption class="p-2 text-center text-sm text-gray-600">Technology</figcaption>
+        </figure>
+        <div class="p-4">
+          <h4 class="font-bold text-lg mb-2">The Future of AI in Technology</h4>
+          <p class="text-gray-600 text-sm mb-4">Explore the advancements in AI and how it's shaping the future of tech industries.</p>
+          <a href="#" class="text-purple-600 font-semibold hover:underline">Read More</a>
+        </div>
+      </div>
+      <!-- Feed Card 2 -->
+      <div class="bg-white shadow rounded-lg overflow-hidden">
+        <figure>
+          <img src="./images/art.png" alt="Art & Design Image" class="w-full h-40 object-cover">
+          <figcaption class="p-2 text-center text-sm text-gray-600">Art & Design</figcaption>
+        </figure>
+        <div class="p-4">
+          <h4 class="font-bold text-lg mb-2">Creative Inspirations: Art & Design</h4>
+          <p class="text-gray-600 text-sm mb-4">Dive into stories and insights from the world of contemporary art and design.</p>
+          <a href="#" class="text-purple-600 font-semibold hover:underline">Read More</a>
+        </div>
+      </div>
+      <!-- Feed Card 3 -->
+      <div class="bg-white shadow rounded-lg overflow-hidden">
+        <figure>
+          <img src="./images/travel.png" alt="Travel Image" class="w-full h-40 object-cover">
+          <figcaption class="p-2 text-center text-sm text-gray-600">Travel</figcaption>
+        </figure>
+        <div class="p-4">
+
+          <h4 class="font-bold text-lg mb-2">Travel: Discover Hidden Gems</h4>
+          <p class="text-gray-600 text-sm mb-4">Get insider tips on unexplored destinations and unique travel experiences.</p>
+          <a href="#" class="text-purple-600 font-semibold hover:underline">Read More</a>
+        </div>
+      </div>
+      <!-- Additional Feed Cards -->
+      <div class="bg-white shadow rounded-lg overflow-hidden">
+        <figure>
+          <img src="./images/music.png" alt="Music Image" class="w-full h-40 object-cover">
+          <figcaption class="p-2 text-center text-sm text-gray-600">Music</figcaption>
+        </figure>
+        <div class="p-4">
+
+          <h4 class="font-bold text-lg mb-2">The Evolution of Music in the Digital Age</h4>
+          <p class="text-gray-600 text-sm mb-4">Explore how technology has transformed the musical landscape and its impact on the industry.</p>
+          <a href="#" class="text-purple-600 font-semibold hover:underline">Read More</a>
+        </div>
+      </div>
+      <div class="bg-white shadow rounded-lg overflow-hidden">
+        <figure>
+          <img src="./images/Modern_Science.png" alt="Science Image" class="w-full h-40 object-cover">
+          <figcaption class="p-2 text-center text-sm text-gray-600">Science</figcaption>
+        </figure>
+        <div class="p-4">
+          <h4 class="font-bold text-lg mb-2">Breakthroughs in Modern Science</h4>
+          <p class="text-gray-600 text-sm mb-4">An overview of the latest scientific discoveries and how they might reshape our world.</p>
+          <a href="#" class="text-purple-600 font-semibold hover:underline">Read More</a>
+        </div>
+      </div>
+      <div class="bg-white shadow rounded-lg overflow-hidden">
+        <figure>
+          <img src="./images/Gaming_Trends.png" alt="Gaming Image" class="w-full h-40 object-cover">
+          <figcaption class="p-2 text-center text-sm text-gray-600">Gaming</figcaption>
+        </figure>
+        <div class="p-4">
+          <h4 class="font-bold text-lg mb-2">Gaming Trends: What to Expect Next</h4>
+          <p class="text-gray-600 text-sm mb-4">Stay updated with the latest trends and innovations in the gaming industry.</p>
+          <a href="#" class="text-purple-600 font-semibold hover:underline">Read More</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 mt-10 shadow-inner">
+    <div class="max-w-7xl mx-auto px-4 text-center text-gray-600">
+      <p>&copy; 2023 Mycelium Feed. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html> 
